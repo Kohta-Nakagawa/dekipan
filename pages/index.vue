@@ -1,8 +1,6 @@
 <template>
   <div>
     <Header />
-
-    {{ sortItems }}
     <p class="m-1">エリアを選択</p>
     <b-form-select
       v-model="selected"
