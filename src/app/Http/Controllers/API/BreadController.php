@@ -49,7 +49,7 @@ class BreadController extends Controller
 
     public function testData()
     {
-        $result = 'testData: {
+        $result ='[{ 
             dekitateList: [
               {
                 id: "8392830",
@@ -121,7 +121,7 @@ class BreadController extends Controller
                   "https://petit-mall.jp/hbrecipe/wp-content/uploads/yakiin2.jpg"
               }
             ]
-          }';
+        }]';
         return $result;
     }
 
