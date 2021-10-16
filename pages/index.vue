@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    {{ shopData }}
     <p class="m-1">エリアを選択</p>
     <b-form-select
       v-model="selected"
@@ -8,6 +9,7 @@
       size="sm"
       class="m-1"
     ></b-form-select>
+
     <div>
       <div v-for="data in sortItems" :key="data.id">
         <div v-if="selected == null">
@@ -137,17 +139,20 @@ export default {
     };
   },
   computed: {
-    // 配列の要素順番を逆順にする
-    sortItems() {
-      return this.testData.dekitateList.sort((a, b) => {
-        return a.time < b.time ? -1 : a.time > b.time ? 1 : 0;
-      });
+    removen() {
+      return this.shopData.replace(/\r?\n/g, "");
     }
+    // 配列の要素順番を逆順にする
+    // sortItems() {
+    //   return this.shopData.dekitateList.sort((a, b) => {
+    //     return a.time < b.time ? -1 : a.time > b.time ? 1 : 0;
+    //   });
+    // }
+  },
+  mounted() {
+    axios
+      .get("https://tsukulab.xsrv.jp/api/top")
+      .then(response => (this.shopData = response));
   }
-  // mounted() {
-  //   axios
-  //     .get("https://jsonplaceholder.typicode.com/posts")
-  //     .then(response => (this.shopData = response));
-  // }
 };
 </script>

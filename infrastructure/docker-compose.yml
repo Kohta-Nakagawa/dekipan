@@ -30,6 +30,9 @@ services:
     environment:
       TZ: Asia/Tokyo
   db:
+    platform: linux/x86_64 # M1チップ対応
+    platform: linux/amd64 # M1チップ対応
+    platform: linux/arm64/v8 # M1チップ対応
     build: ./docker/mysql
     volumes:
       - db-store:/var/lib/mysql:delegated
