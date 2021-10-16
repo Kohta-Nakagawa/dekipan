@@ -47,6 +47,12 @@ class BreadController extends Controller
     //     return $this->resConversionJson($result);
     // }
 
+    public function testData()
+    {
+        $result ='[{dekitateList: [{id: "8392830",area: "sawaraku",time: "3:31",pan: "メロンパン",shop: "ケイズオーブン2", address: "福岡市中央区天神1-1-1",image: "https://www.okuo-tokyo.jp/upfiles/L1506066493_46-whole.jpg" }, { id: "8dg2830", area: "nishiku",time: "10:42", pan: "ウインナーパン", shop: "オーブンオーブン", address: "福岡市中央区天神1-1-1",  image: "https://media-01.creema.net/user/245416/exhibits/3840354/1_7c71e56d0352b4aabf03780a5a7715a0_500.jpg"}, { id: "839gddde30", area: "nishiku", time: "3:56", pan: "コッペパン", shop: "ここに決めた",address: "福岡市中央区天神1-1-1", image:"https://coubic-images.s3.amazonaws.com/resources/265675/p1280x1280_61881c5d.JPG"}]}]';
+        return $result;
+    }
+
     private function resConversionJson($result, $statusCode=200)
     {
         if(empty($statusCode) || $statusCode < 100 || $statusCode >= 600){
