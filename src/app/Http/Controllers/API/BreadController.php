@@ -15,14 +15,14 @@ class BreadController extends Controller
      */
     public function index()
     {
-        $result = '{
+        $results = '{
             "dekitateList":[
                  {"id":"1","area":"sawaraku","time":"3:30","pan":"メロンパン","shop":"ケイズオーブン","address":"福岡市早良区西新1-1-1","image":"https://aaa.com"},
                  {"id":"2","area":"sawaraku","time":"4:30","pan":"カレーパン","shop":"エルズオーブン","address":"福岡市早良区曙1-1-1","image":"https://bbb.com"},
                  {"id":"3","area":"jonanku","time":"5:30","pan":"食パン","shop":"エムズオーブン","address":"福岡市城南区茶山1-1-1","image":"https://ccc.com"},
                  {"id":"4","area":"chuoku","time":"6:30","pan":"あんパン","shop":"エヌズオーブン","address":"福岡市中央区天神1-1-1","image":"https://ccc.com"}
              ]}';
-        return $result;
+        return $results;
     }
     // public function index()
     // {
