@@ -69,7 +69,7 @@ export default {
             id: "8392830",
             area: "sawaraku",
             time: "3:31",
-            pan: "メロンパン",
+            pan: "メロンパン2",
             shop: "ケイズオーブン2",
             address: "福岡市中央区天神1-1-1",
             image: "https://www.hokuo-tokyo.jp/upfiles/L1506066493_46-whole.jpg"
