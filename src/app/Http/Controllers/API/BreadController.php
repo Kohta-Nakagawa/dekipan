@@ -29,9 +29,9 @@ class BreadController extends Controller
     {
         $results = '{
             "dekitate":[
-                 {"id":"1","area":"sawaraku","time":"4:30","pan":"カレーパン","shop":"エルズオーブン","address":"福岡市早良区曙1-1-1","image":"http://www.oksfood.com/image/karepan.jpg"},
-                 {"id":"2","area":"jonanku","time":"5:30","pan":"食パン","shop":"エムズオーブン","address":"福岡市城南区茶山1-1-1","image":"https://img.foodsfridge.jp/ec_rider/product_main_images/large/295400000.jpg"},
-                 {"id":"3","area":"chuoku","time":"6:30","pan":"あんパン","shop":"エヌズオーブン","address":"福岡市中央区天神1-1-1","image":"https://www.pompadour.co.jp/eshop/wp-content/uploads/2016/02/35048.jpg"}
+                 {"id":"1","area":"sawaraku","time":"4:30","pan":"カレーパン","shopId":"1","address":"福岡市早良区曙1-1-1","image":"http://www.oksfood.com/image/karepan.jpg"},
+                 {"id":"2","area":"jonanku","time":"5:30","pan":"食パン","shopId":"2","address":"福岡市城南区茶山1-1-1","image":"https://img.foodsfridge.jp/ec_rider/product_main_images/large/295400000.jpg"},
+                 {"id":"3","area":"chuoku","time":"6:30","pan":"あんパン","shopId":"3","address":"福岡市中央区天神1-1-1","image":"https://www.pompadour.co.jp/eshop/wp-content/uploads/2016/02/35048.jpg"}
              ]}';
         return $results;
     }
