@@ -21,4 +21,5 @@ use App\Http\Controllers\API\BreadController;
 
 Route::get('/breads', [BreadController::class, 'index']);
 Route::get('/top', [BreadController::class, 'testData']);
+Route::get('/fresh', [BreadController::class, 'getFreshBreads']);
 // Route::post('/top', [AriaController::class, 'index']);
