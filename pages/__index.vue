@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header />
-    {{ shopData }}
     <p class="m-1">エリアを選択</p>
     <b-form-select
       v-model="selected"
@@ -11,7 +10,7 @@
     ></b-form-select>
 
     <div>
-      <div v-for="data in shopData" :key="data.id">
+      <div v-for="data in testData" :key="data.id">
         <div v-if="selected == null">
           <div>
             <b-container class="bv-example-row">
@@ -51,7 +50,7 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   data() {
     return {
@@ -140,11 +139,11 @@ export default {
   },
   computed: {
     // 配列の要素順番を逆順にする
-    // sortItems() {
-    //   return this.shopData.dekitateList.sort((a, b) => {
-    //     return a.time < b.time ? -1 : a.time > b.time ? 1 : 0;
-    //   });
-    // }
+    sortItems() {
+      return this.shopData.dekitateList.sort((a, b) => {
+        return a.time < b.time ? -1 : a.time > b.time ? 1 : 0;
+      });
+    }
   },
   mounted() {
     axios

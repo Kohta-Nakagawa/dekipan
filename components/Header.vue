@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable type="dark" variant="dark">
+  <b-navbar toggleable type="dark" variant="primary">
     <b-navbar-brand href="#">DEKIPAN</b-navbar-brand>
 
     <b-navbar-toggle target="navbar-toggle-collapse">
