@@ -31,6 +31,7 @@ services:
       TZ: Asia/Tokyo
   db:
     image: mariadb:10.5
+    # build: ./docker/mysql
     # platform: linux/x86_64 # M1チップ対応
     # platform: linux/amd64 # M1チップ対応
     # platform: linux/arm64/v8 # M1チップ対応
